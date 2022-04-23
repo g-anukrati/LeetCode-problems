@@ -3,13 +3,13 @@ public:
     unordered_map<string,string>map;
     // Encodes a URL to a shortened URL.
     string encode(string longUrl) {
-        map["AnirudhTheGreat"] = longUrl;
-        return "AnirudhTheGreat";
+        map["TheGreat"] = longUrl;
+        return "TheGreat";
     }
 
     // Decodes a shortened URL to its original URL.
     string decode(string shortUrl) {
-        return map["AnirudhTheGreat"];
+        return map["TheGreat"];
     }
 };
 
