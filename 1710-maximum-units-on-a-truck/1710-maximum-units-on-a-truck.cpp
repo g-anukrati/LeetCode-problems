@@ -8,10 +8,9 @@ public:
     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
    
         sort(boxTypes.begin(), boxTypes.end(), comp); 
-        int x=0; 
         int result=0;
         for (int i=0; i<boxTypes.size(); i++){
-            x = min(boxTypes[i][0], truckSize);
+          int  x = min(boxTypes[i][0], truckSize);
             truckSize = truckSize- x;
             result += x * boxTypes[i][1];
             if (!truckSize)
